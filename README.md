@@ -2,8 +2,7 @@ React application allowing users to search for books using the Open Library API 
 
 Setting Up the Project Locally:
 
-Clone the Repository: git clone https://github.com/your-username/your-repository.git
-
+Clone the Repository: git clone "https://github.com/Sonia-sahu/Personal_BookShelf.git"
 Navigate to the Project Directory: "cd your-repository"
 
 Install Dependencies: "npm install"
