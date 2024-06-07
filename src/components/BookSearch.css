@@ -1,0 +1,116 @@
+/* BookSearchPage.css */
+body{
+  background-color: rgba(172, 123, 202, 0.514);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #a569ab4a;
+}
+
+.project-name {
+  font-size: 2rem;
+  color: #101010;
+}
+
+.input-search {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #30a56e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.results, .bookshelf-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0.25rem 0;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button.add-to-bookshelf {
+  background-color: #28a745;
+  color: white;
+}
+
+.card button.add-to-bookshelf:hover {
+  background-color: #218838;
+}
+
+.card button.already-in-bookshelf {
+  background-color: #5e7f9c;
+  color: white;
+}
+
+.card button.already-in-bookshelf:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .input-search {
+    width: 70%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .results, .bookshelf-results {
+    justify-content: center;
+  }
+}
+.remove-button {
+  background-color: rgba(57, 82, 163, 0.788); /* Set the background color */
+  color: white; /* Set the text color */
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.remove-button:hover {
+  background-color: rgba(80, 112, 160, 0.585); /* Change color on hover */
+}
